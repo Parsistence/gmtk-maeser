@@ -123,12 +123,12 @@ app_manager = App_Manager(
     app_name="GMTK Test App",
     flask_secret_key=FLASK_SECRET_KEY,
     chat_session_manager=sessions_manager,
-    # user_manager=user_manager,
+    user_manager=user_manager,
     main_logo_chat="/static/gmtk_logo.jpeg",
+    main_logo_login="/static/gmtk_logo.jpeg",
     chat_head="/static/gmtk_logo.jpeg",
     favicon="/static/gmtk_logo.jpeg",
     # Note that you can change other aspects too! Heres some examples below
-    # main_logo_login="/static/main_logo_login.png",
     # login_text="Welcome to Maeser. This package is designed to facilitate the creation of Retrieval-Augmented Generation (RAG) chatbot applications, specifically tailored for educational purposes."
     # primary_color="#f5f5f5"
     # Please also check the documentation for further customization options!
