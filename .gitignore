@@ -23,8 +23,8 @@ dist
 #Ignore poetry.lock files
 poetry.lock
 #Ignore 
-*.faiss
-*.pkl
+# *.faiss
+# *.pkl
 #Ignore all generated files
 output/*.txt
 source/*.pdf
