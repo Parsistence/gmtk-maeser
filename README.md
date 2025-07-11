@@ -1,10 +1,10 @@
 # GMTK Maeser
 ## Overview
-GMTK Maeser is a chatbot webapp that uses the Maeser library to pull resources from Mark Brown's game design series, Game Maker's Toolkit.
+**GMTK Maeser** is a chatbot web app that uses the [**Maeser library**](https://github.com/byu-cpe/Maeser) to pull resources from Mark Brown's game design series, [**Game Maker's Toolkit**](https://www.youtube.com/playlist?list=PLc38fcMFcV_s7Lf6xbeRfWYRt7-Vmi_X9).
 
 ## Features
 - **Conversations Powered by Retrieval-Augmented-Generation (RAG):** When asked a question, the chatbot pulls from a database of GMTK transcripts to find the most relevant resoures, and it uses this data to answer the user's question, referring the user to the videos it sourced its information from.
-- **Tools for Creating/Updating the GMTK Database:** The GMTK video transcripts must be converted into a **vectorstore** database to be used by the chatbot. This repository provides various [tools](./tools/) to do so with guided [instructions](./tools/readme.md).
+- **Tools for Creating/Updating the GMTK Database:** The GMTK video transcripts must be converted into a **vectorstore** database to be used by the chatbot. This repository provides various [tools](./tools/) to create this vectorstore and a [readme](./tools/readme.md) with guided instructions for using these tools.
 
 This package is licensed on the LGPL version 3 or later.
 See [COPYING.LESSER.md](COPYING.LESSER.md) and [COPYING.md](COPYING.md) for details.
