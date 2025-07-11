@@ -16,7 +16,7 @@ Maeser. If not, see <https://www.gnu.org/licenses/>.
 """
 
 from config import (
-    LOG_SOURCE_PATH, OPENAI_API_KEY, USERS_DB_PATH, 
+    FLASK_SECRET_KEY, LOG_SOURCE_PATH, OPENAI_API_KEY, USERS_DB_PATH, 
     VEC_STORE_PATH, MAX_REQUESTS, RATE_LIMIT_INTERVAL, 
     GITHUB_CLIENT_ID, GITHUB_CLIENT_SECRET, GITHUB_AUTH_CALLBACK_URI, 
     GITHUB_TIMEOUT, CHAT_HISTORY_PATH, LDAP3_NAME, 
@@ -112,15 +112,13 @@ from flask import Flask
 base_app = Flask(__name__)
 
 from maeser.blueprints import App_Manager
-# Create a secret key for the app sessions
-APP_SECRET_KEY = b'14d5446aca99ff40d2a8d6121831f10597193754c069a8b724586a56058f9142'
 
 # Create the App_Manager class
 
 app_manager = App_Manager(
     app=base_app,
     app_name="GMTK Test App",
-    flask_secret_key=APP_SECRET_KEY,
+    flask_secret_key=FLASK_SECRET_KEY,
     chat_session_manager=sessions_manager,
     # user_manager=user_manager,
     main_logo_chat="/static/gmtk_logo.jpeg",

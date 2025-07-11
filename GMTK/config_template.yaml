@@ -15,6 +15,12 @@
 # You should have received a copy of the GNU Lesser General Public License along with
 # Maeser. If not, see <https://www.gnu.org/licenses/>.
 
+### Flask Secret Key ###
+# To generate a new key, run `python -c 'import secrets; print(secrets.token_hex())'` in your terminal
+
+flask:
+  secret_key: '...'
+
 ### API keys are required for OpenAI and GitHub integrations ###
 
 api_keys:

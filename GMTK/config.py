@@ -36,6 +36,9 @@ def load_config():
 
 config = load_config()
 
+# Flask Secret Key
+FLASK_SECRET_KEY = config.get('flask',{}).get('secret_key')
+
 # API Keys
 OPENAI_API_KEY = config.get('api_keys', {}).get('openai_api_key')
 GITHUB_CLIENT_SECRET = config.get('api_keys', {}).get('github_client_secret')
