@@ -1,0 +1,3 @@
+# YT Transcripts
+youtube-transcript-api
+yt-dlp
