@@ -7,7 +7,7 @@ These tools will allow you to pull the transcripts of each video essay from the 
 3. [**Vectorize the video transcripts**](#vectorize-the-video-transcripts) using [`make_gmtk_vectorstore/make_vectorstore.py`](./make_gmtk_vectorstore/make_vectorstore.py).
 
 ## Prerequisite Requirements
-Before using these tools, make sure to install the required libraries using [`GMTK/requirements/requirements_tools.txt`](./../requirements/requirements_tools.txt).
+Before using these tools, make sure to install the required libraries using [`requirements/requirements_tools.txt`](./../requirements/requirements_tools.txt).
 
 ## Download the Playlist Page as an HTML File
 
@@ -27,4 +27,4 @@ Once you have `playlist.html` in the `get_transcripts/` directory, create a `tra
 
 ## Vectorize the Video Transcripts
 
-Once all video transcripts have been saved into the `transcripts/` folder, move `transcripts/` into `tools/make_gmtk_vectorstore` and run [make_vectorstore.py](./make_gmtk_vectorstore/make_vectorstore.py). The script will create a new folder named `gmtk/` and will save the vectorstore into this directory. Once this is generated, move `gmtk/` into `GMTK/vectorstores`, and you are all set!
+Once all video transcripts have been saved into the `transcripts/` folder, move `transcripts/` into `tools/make_gmtk_vectorstore` and run [make_vectorstore.py](./make_gmtk_vectorstore/make_vectorstore.py). The script will create a new folder named `gmtk/` and will save the vectorstore into this directory. Once this is generated, move `gmtk/` into `vectorstores`, and you are all set!
