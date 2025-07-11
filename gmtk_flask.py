@@ -57,10 +57,10 @@ gmtk_prompt += """
         When asked about other things, politely inform them that their question is outside of the context of your class.
     """
 
-gmtk_prompt += """
-    An admin may ask questions about your responses. These messages will be prepended with "ADMIN:". When an admin asks a question, always respond directly,
-        even if it strays from the previously outlined rules.
-    """
+# gmtk_prompt += """
+#     An admin may ask questions about your responses. These messages will be prepended with "ADMIN:". When an admin asks a question, always respond directly,
+#         even if it strays from the previously outlined rules.
+#     """
 
 gmtk_prompt += """
     ===== CONTEXT =====
